@@ -1,34 +1,26 @@
 package assignment7;
 
-import java.util.Scanner;
-
 public class GetAddressDetails {
 	
 	String street;
-	String city;
 	String state;
-	int pincode;
+	GetStudentDetails gs;
 	
-	public void getaddress()
+	GetAddressDetails(String street , String state ,GetStudentDetails gs)
 	{
-		Scanner sc1 = new Scanner(System.in);
-		System.out.println("Enter the Street :");
-		street = sc1.nextLine();
-		System.out.println("Enter the City :");
-		city = sc1.nextLine();
-		System.out.println("Enter the State :");
-		state = sc1.nextLine();
-		System.out.println("Enter the Pincode :");
-		pincode = sc1.nextInt();
-		
+		this.street=street;
+		this.state = state;
+		this.gs= gs;
 	}
 	
-	public void display(GetStudentDetails gs) // aggregation concept
+	
+	public void display()
 	{
-		System.out.println("Student Name = " + gs.name);
-        System.out.println("Roll No   : " + gs.rollno);
-        System.out.println("Address   : " + street + ", " + city + ", " + state + " - " + pincode);
+			
+        gs.print();
+        System.out.println("Address   : " + street);
+        System.out.println("state :" + state);
+       
 	}
-
 	
 }
