@@ -15,18 +15,20 @@ public class Animal {
 			
 		}
 		
+		catch(ArrayIndexOutOfBoundsException b)
+		{
+			System.out.println("This is inside second catch block");
+			System.out.println(b);
+		}
+		
 		catch(Exception a)
 		{
 			System.out.println("This is inside first catch block");
 			System.out.println(a);
 		}
 		
-	/*	catch(ArrayIndexOutOfBoundsException b)
-		{
-			System.out.println("This is inside second catch block");
-			System.out.println(b);
-		}
-*/
+		
+
 	}
 
 }

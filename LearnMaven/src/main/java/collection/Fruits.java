@@ -38,6 +38,7 @@ public class Fruits {
 		
 		s1.clear();//clears all the values in s1
 		System.out.println(s1);
+		
 
 	}
 

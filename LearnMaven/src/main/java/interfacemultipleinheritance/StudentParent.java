@@ -2,7 +2,7 @@ package interfacemultipleinheritance;
 
 public interface StudentParent {
 
-	 void display();
+	 void display();//method inside abstract class is abstract method
 	 
 	 
 	

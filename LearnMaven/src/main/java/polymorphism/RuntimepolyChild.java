@@ -15,8 +15,10 @@ public class RuntimepolyChild extends RuntimepolyParent{
 		
 		RuntimepolyChild c1 = new RuntimepolyChild();
 		c1.display("Sherin", 25);
-		RuntimepolyParent c2 = new RuntimepolyChild();
+		RuntimepolyParent c2 = new RuntimepolyChild();// this is concept of upcasting where parent class refers ro the object of child class
 		c2.display("Anu", 20);
+		RuntimepolyParent c3 = new RuntimepolyParent();
+		c3.display("Anu", 20);
 		
 		
 		
